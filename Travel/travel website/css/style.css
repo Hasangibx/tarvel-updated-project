@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+
+.progress {
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progress 1s linear;
+}
+@keyframes progress {
+  to {
+    background-color: rgb(216, 121, 31);
+    width: 100%;
+  }
+}
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -12,7 +28,9 @@
   -webkit-transition: .2s linear;
   transition: .2s linear;
 }
-
+body {
+  scroll-behavior: smooth;
+}
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -852,5 +870,61 @@ section {
   .heading {
     font-size: 3rem;
   }
+}
+body{
+  overflow: hidden;
+}
+.contacthover{
+  background-color: steelblue;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+ left: -65px;
+}
+.contacthover p{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.contactbox{
+  border: 1px solid black;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  right: -251px;
+}
+.contactbox:hover{
+ right: 0px;
+  animation: cardanime   ; 
+}
+/* @keyframes cardanime {
+  from{
+      right: -251px;
+  }
+  to{
+      right: 0px;
+  }
+} */
+form{
+  display: table-caption;
+}
+input , textarea {
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.contactsub{
+  margin: auto;
+  display: block;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: #1296e2;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

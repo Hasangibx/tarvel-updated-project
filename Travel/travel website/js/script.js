@@ -1,3 +1,6 @@
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}, false);
 let navbar = document.querySelector('.header .navbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
@@ -130,4 +133,4 @@ var swiper = new Swiper(".clients-slider", {
           slidesPerView: 4,
         },
     },
-});
+}); 
